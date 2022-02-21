@@ -6,6 +6,8 @@ brain-games: # Запуск приложения brain-games
 	node bin/brain-games.js
 brain-even: # Запуск приложения brain-even
 	node bin/brain-even.js
+brain-calc: # Запуск приложения brain-calc
+	node bin/brain-calc.js
 publish: # Публикация приложения
 	npm publish --dry-run
 lint: # Запуск линтера
