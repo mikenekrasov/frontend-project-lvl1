@@ -11,7 +11,6 @@ const brainEven = () => {
 
   const user = greetings();
   yesNoAnswer();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < rounds; i += 1) {
     const randomNumber = getRandomInt(minimum, maximum);
     console.log(`Question: ${randomNumber}`);
