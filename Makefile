@@ -8,6 +8,8 @@ brain-even: # Запуск приложения brain-even
 	node bin/brain-even.js
 brain-calc: # Запуск приложения brain-calc
 	node bin/brain-calc.js
+brain-gcd: # Запуск приложения brain-gcd
+	node bin/brain-gcd.js
 publish: # Публикация приложения
 	npm publish --dry-run
 lint: # Запуск линтера
