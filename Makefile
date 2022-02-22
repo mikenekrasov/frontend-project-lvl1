@@ -12,6 +12,8 @@ brain-gcd: # Запуск приложения brain-gcd
 	node bin/brain-gcd.js
 brain-progression: # Запуск приложения brain-progression
 	node bin/brain-progression.js
+brain-prime: # Запуск приложения brain-prime
+	node bin/brain-prime.js
 publish: # Публикация приложения
 	npm publish --dry-run
 lint: # Запуск линтера
