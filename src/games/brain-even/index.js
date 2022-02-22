@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import getRandomInt from '../../helpers/getRandomInt.js';
 import isEven from './isEven.js';
 import greetings from '../../helpers/greetings.js';
+import yesNoAnswer from '../../helpers/yesNoAnswer.js';
 
 const brainEven = () => {
   const rounds = 3;
@@ -9,6 +10,7 @@ const brainEven = () => {
   const maximum = 100;
 
   const user = greetings();
+  yesNoAnswer();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < rounds; i += 1) {
     const randomNumber = getRandomInt(minimum, maximum);
