@@ -10,6 +10,8 @@ brain-calc: # Запуск приложения brain-calc
 	node bin/brain-calc.js
 brain-gcd: # Запуск приложения brain-gcd
 	node bin/brain-gcd.js
+brain-progression: # Запуск приложения brain-progression
+	node bin/brain-progression.js
 publish: # Публикация приложения
 	npm publish --dry-run
 lint: # Запуск линтера
