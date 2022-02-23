@@ -10,14 +10,15 @@ const brainProgression = () => {
   for (let i = 0; i < rounds; i += 1) {
     const firstArg = getRandomInt(1, 5);
     const difference = getRandomInt(1, 3);
-    const range = getRandomInt(5, 10);
+    const range = getRandomInt(6, 10);
 
     const progression = arithmeticProgressionGenerator(firstArg, difference, range);
     const randomIndex = getRandomInt(0, progression.length - 1);
     const hiddenElement = progression[randomIndex];
     progression[randomIndex] = '..';
+    const progressionWithHiddenElement = progression.join(' ');
 
-    console.log(`Question: ${progression}`);
+    console.log(`Question: ${progressionWithHiddenElement}`);
     const answer = Number(readlineSync.question('Your answer: '));
     if (answer !== hiddenElement) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${hiddenElement}'.`);
