@@ -23,6 +23,6 @@ make lint
 ## Brain-gcd game
 [![asciicast](https://asciinema.org/a/FC2a3qod4UOzo4PphBgiNAPWF.svg)](https://asciinema.org/a/FC2a3qod4UOzo4PphBgiNAPWF)
 ## Brain-progression game
-[![asciicast](https://asciinema.org/a/iDdHXFgMXUk9HrvhVdWJa6Sah.svg)](https://asciinema.org/a/iDdHXFgMXUk9HrvhVdWJa6Sah)
+[![asciicast](https://asciinema.org/a/RBNHfUBusItCsGgN3E6FqLQg9.svg)](https://asciinema.org/a/RBNHfUBusItCsGgN3E6FqLQg9)
 ## Brain-prime
 [![asciicast](https://asciinema.org/a/o5b5EkFhQIFqWm874yKrrsX42.svg)](https://asciinema.org/a/o5b5EkFhQIFqWm874yKrrsX42)
