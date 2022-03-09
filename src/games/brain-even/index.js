@@ -1,29 +1,19 @@
-import readlineSync from 'readline-sync';
 import getRandomInt from '../../helpers/getRandomInt.js';
 import isEven from './isEven.js';
-import greetings from '../../helpers/greetings.js';
-import yesNoAnswer from '../../helpers/yesNoAnswer.js';
+import engine from '../../engine.js';
 
 const brainEven = () => {
-  const rounds = 3;
   const minimum = 0;
   const maximum = 100;
+  const instructions = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  const user = greetings();
-  yesNoAnswer();
-  for (let i = 0; i < rounds; i += 1) {
+  const makeRound = () => {
     const randomNumber = getRandomInt(minimum, maximum);
-    console.log(`Question: ${randomNumber}`);
-    const answer = readlineSync.question('Your answer: ');
-    const result = isEven(randomNumber);
-    if (answer !== result) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
-      console.log(`Let's try again, ${user}!`);
-      return;
-    }
-    console.log('Correct');
-  }
-  console.log(`Congratulations, ${user}!`);
+    const answer = isEven(randomNumber) ? 'yes' : 'no';
+    return [randomNumber, answer];
+  };
+
+  engine(instructions, makeRound);
 };
 
 export default brainEven;
