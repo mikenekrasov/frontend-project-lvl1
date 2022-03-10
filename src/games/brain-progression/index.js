@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import engine from '../../engine.js';
 import getRandomInt from '../../helpers/getRandomInt.js';
 import arithmeticProgressionGenerator from './arithmeticProgressionGenerator.js';
