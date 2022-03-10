@@ -14,11 +14,10 @@ const brainProgression = () => {
     const progression = arithmeticProgressionGenerator(firstArg, difference, range);
     const randomIndex = getRandomInt(0, progression.length - 1);
 
+    const result = String(progression[randomIndex]);
     progression[randomIndex] = '..';
     const progressionWithHiddenElement = progression.join(' ');
-    const question = `Question: ${progressionWithHiddenElement}`;
-    const result = Number(readlineSync.question('Your answer: '));
-    return [question, result];
+    return [progressionWithHiddenElement, result];
   };
 
   engine(instructions, makeRound);
