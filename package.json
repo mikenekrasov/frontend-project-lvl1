@@ -9,7 +9,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "description": "[![Actions Status](https://github.com/mikenekrasov/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/mikenekrasov/frontend-project-lvl1/actions)",
+  "description": "Console games package",
   "main": "index.js",
   "type": "module",
   "scripts": {
