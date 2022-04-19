@@ -1,23 +1,24 @@
 import engine from '../engine.js';
-import getRandomInt from '../helpers/getRandomInt.js';
-import arithmeticProgressionGenerator from '../helpers/arithmeticProgressionGenerator.js';
+import getRandomNumber from '../helpers/getRandomNumber.js';
+import getArithmeticProgression from '../helpers/getArithmeticProgression.js';
+
+const instructions = 'What number is missing in the progression?';
 
 const generateRound = () => {
-  const firstArg = getRandomInt(1, 5);
-  const difference = getRandomInt(1, 3);
-  const range = getRandomInt(6, 10);
+  const firstArg = getRandomNumber(1, 5);
+  const step = getRandomNumber(1, 5);
+  const range = getRandomNumber(6, 10);
 
-  const progression = arithmeticProgressionGenerator(firstArg, difference, range);
-  const randomIndex = getRandomInt(0, progression.length - 1);
+  const progression = getArithmeticProgression(firstArg, step, range);
+  const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
 
-  const result = String(progression[randomIndex]);
-  progression[randomIndex] = '..';
+  const result = String(progression[hiddenElementIndex]);
+  progression[hiddenElementIndex] = '..';
   const progressionWithHiddenElement = progression.join(' ');
   return [progressionWithHiddenElement, result];
 };
 
 const brainProgression = () => {
-  const instructions = 'What number is missing in the progression?';
   engine(instructions, generateRound);
 };
 
