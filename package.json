@@ -10,7 +10,6 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "description": "Console games package",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
