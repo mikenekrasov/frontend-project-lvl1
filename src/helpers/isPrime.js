@@ -1,5 +1,4 @@
 const isPrime = (number) => {
-  if (number === 2) return true;
   if (number <= 1) return false;
 
   for (let i = 2; i < number; i += 1) {
