@@ -1,19 +1,14 @@
 const getCalculation = (operand1, operand2, operator) => {
-  let result = null;
   switch (operator) {
     case '+':
-      result = operand1 + operand2;
-      break;
+      return operand1 + operand2;
     case '-':
-      result = operand1 - operand2;
-      break;
+      return operand1 - operand2;
     case '*':
-      result = operand1 * operand2;
-      break;
+      return operand1 * operand2;
     default:
       throw new Error(`Unknown operator: '${operator}'!`);
   }
-  return result;
 };
 
 export default getCalculation;
