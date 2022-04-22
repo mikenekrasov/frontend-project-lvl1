@@ -5,11 +5,11 @@ import getArithmeticProgression from '../helpers/getArithmeticProgression.js';
 const instruction = 'What number is missing in the progression?';
 
 const generateRound = () => {
-  const firstArg = getRandomNumber(1, 5);
+  const number1 = getRandomNumber(1, 5);
   const step = getRandomNumber(1, 5);
   const range = getRandomNumber(6, 10);
 
-  const progression = getArithmeticProgression(firstArg, step, range);
+  const progression = getArithmeticProgression(number1, step, range);
   const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
 
   const result = String(progression[hiddenElementIndex]);
