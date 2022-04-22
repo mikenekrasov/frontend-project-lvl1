@@ -2,7 +2,7 @@ import getRandomNumber from '../helpers/getRandomNumber.js';
 import getCalculation from '../helpers/getCalculation.js';
 import engine from '../engine.js';
 
-const instructions = 'What is the result of the expression?';
+const instruction = 'What is the result of the expression?';
 
 const generateRound = () => {
   const operators = ['+', '-', '*'];
@@ -16,7 +16,7 @@ const generateRound = () => {
 };
 
 const brainCalc = () => {
-  engine(instructions, generateRound);
+  engine(instruction, generateRound);
 };
 
 export default brainCalc;

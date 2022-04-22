@@ -2,7 +2,7 @@ import engine from '../engine.js';
 import getRandomNumber from '../helpers/getRandomNumber.js';
 import getArithmeticProgression from '../helpers/getArithmeticProgression.js';
 
-const instructions = 'What number is missing in the progression?';
+const instruction = 'What number is missing in the progression?';
 
 const generateRound = () => {
   const firstArg = getRandomNumber(1, 5);
@@ -19,7 +19,7 @@ const generateRound = () => {
 };
 
 const brainProgression = () => {
-  engine(instructions, generateRound);
+  engine(instruction, generateRound);
 };
 
 export default brainProgression;

@@ -2,7 +2,7 @@ import getRandomNumber from '../helpers/getRandomNumber.js';
 import getGreatestCommonDivisor from '../helpers/getGreatestCommonDivisor.js';
 import engine from '../engine.js';
 
-const instructions = 'Find the greatest common divisor of given numbers.';
+const instruction = 'Find the greatest common divisor of given numbers.';
 
 const generateRound = () => {
   const firstArg = getRandomNumber(1, 100);
@@ -13,7 +13,7 @@ const generateRound = () => {
 };
 
 const brainCalc = () => {
-  engine(instructions, generateRound);
+  engine(instruction, generateRound);
 };
 
 export default brainCalc;

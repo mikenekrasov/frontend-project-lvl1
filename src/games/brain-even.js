@@ -2,7 +2,7 @@ import getRandomNumber from '../helpers/getRandomNumber.js';
 import isEven from '../helpers/isEven.js';
 import engine from '../engine.js';
 
-const instructions = 'Answer "yes" if the number is even, otherwise answer "no".';
+const instruction = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const generateRound = () => {
   const randomNumber = getRandomNumber(0, 100);
@@ -11,7 +11,7 @@ const generateRound = () => {
 };
 
 const brainEven = () => {
-  engine(instructions, generateRound);
+  engine(instruction, generateRound);
 };
 
 export default brainEven;
