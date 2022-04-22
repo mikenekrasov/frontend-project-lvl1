@@ -1,8 +1,20 @@
 import getRandomNumber from '../helpers/getRandomNumber.js';
-import getCalculation from '../helpers/getCalculation.js';
 import engine from '../engine.js';
 
 const instruction = 'What is the result of the expression?';
+
+const getCalculation = (operand1, operand2, operator) => {
+  switch (operator) {
+    case '+':
+      return operand1 + operand2;
+    case '-':
+      return operand1 - operand2;
+    case '*':
+      return operand1 * operand2;
+    default:
+      throw new Error(`Unknown operator: '${operator}'!`);
+  }
+};
 
 const generateRound = () => {
   const operators = ['+', '-', '*'];
