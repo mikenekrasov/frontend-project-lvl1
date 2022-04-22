@@ -1,8 +1,20 @@
 import engine from '../engine.js';
 import getRandomNumber from '../helpers/getRandomNumber.js';
-import getArithmeticProgression from '../helpers/getArithmeticProgression.js';
 
 const instruction = 'What number is missing in the progression?';
+
+const getArithmeticProgression = (firstArg, difference, range) => {
+  let arg = firstArg;
+  let progressionRange = range;
+  const progression = [];
+
+  while (progressionRange > 0) {
+    progression.push(arg);
+    arg += difference;
+    progressionRange -= 1;
+  }
+  return progression;
+};
 
 const generateRound = () => {
   const number1 = getRandomNumber(1, 5);
