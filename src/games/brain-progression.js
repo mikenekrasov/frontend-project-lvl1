@@ -8,20 +8,19 @@ const getArithmeticProgression = (firstArg, difference, range) => {
   let progressionRange = range;
   const progression = [];
 
-  while (progressionRange > 0) {
+  for (let i = 0; i < progressionRange; progressionRange -= 1) {
     progression.push(arg);
     arg += difference;
-    progressionRange -= 1;
   }
   return progression;
 };
 
 const generateRound = () => {
-  const number1 = getRandomNumber(1, 5);
+  const number = getRandomNumber(1, 5);
   const step = getRandomNumber(1, 5);
   const range = getRandomNumber(6, 10);
 
-  const progression = getArithmeticProgression(number1, step, range);
+  const progression = getArithmeticProgression(number, step, range);
   const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
 
   const result = String(progression[hiddenElementIndex]);
